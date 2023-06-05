@@ -2,7 +2,7 @@
   "name": "rollcall",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://rollcall01.vercel.app/",
+  "proxy": "https://rollcall.vercel.app/",
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
