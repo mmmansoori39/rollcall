@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 77vw;
+  margin: 30px auto;
+  min-height: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.178);
+}
+.container div{
+  width: 100%;
+  height: 50px;
+  background-color:  #19A7CE;
+  color: white;
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container div h4{
+  font-family: 'Castoro Titling', cursive;
+}
+.container table{
+  width: 100%;
+  /* margin: 10px 5px 10px 5px; */
+  box-sizing: border-box;
+
+}
+.container table tr td {
+  padding: 5px 12px;
+  border: 1px solid #ffffff;
+}
+.container table tbody tr td span{
+  display: flex;
+  justify-content: space-around;
+}
+.container table tbody tr td span img{
+  width: 60px;
+  mix-blend-mode: darken;
+}
+.container table tr th{
+  padding: 15px 12px;
+  color:white;
+  background-color: #0f6092;
+  border: 1px solid #ffffff;
+  border-top: none;
+}
+.container table tr td {
+  background-color: #AFD3E2;
+  color: black;
+  font-size: 1em;
+}
+.container table tr button {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25),
+    inset 0px -4px 4px rgba(255, 255, 255, 0.26),
+    inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: #000000;
+  font-weight: 550;
+}
+.container table tr button:hover {
+  color: maroon;
+  background-color: #ffffff;
+}
+/* .container table tbody tr td:hover{
+    background-color: #ffb3cf;
+} */

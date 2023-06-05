@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    width: 77vw;
+    height: 90px;
+    margin: 30px auto;
+    min-width: 360px;
+    background-color: #ffffff;
+    box-shadow: 4px 3px 10px 2px rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 10px 25px 10px ;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+  .container .inputval {
+    display: flex;
+    flex-wrap: wrap; 
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 20px;
+    row-gap: 35px;
+    /* margin-bottom: 30px; */
+  }
+  @media screen and (max-width: 1030px) {
+    .container .inputval{
+      justify-content: center;
+    }
+  }
+  .container .inputval .inp {
+    width: 317px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* box-shadow: inset 0px -4px 4px rgba(255, 255, 255, 0.83),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 8px;
+    padding: 7px 12px;
+  }
+  .container .inputval .inp input {
+    border: none;
+    outline: none;
+    /* background: none; */
+    color: #aaaaaa;
+    width: 100%;
+  }
+  .container .inputval .inp input::placeholder {
+    font-size: 16px;
+  }
+  .container .inputval .btn button {
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.292);
+    border: none;
+    height: 40px;
+    width: 180px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 580;
+    background-color: #0f6092;
+    color: white;
+    font-family: 'Castoro Titling', cursive;
+    }

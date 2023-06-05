@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 370px;
+  margin: 22px 0px 15px 0px;
+  /* background-color: #ffffff; */
+  background-color: #ffffff;
+  box-shadow: 3px 5px 15px 2px rgba(0, 0, 0, 0.286);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a8a8a8;
+  padding: 12px 10px;
+  border-radius: 12px;
+}
+.container span {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+.container span h5{
+  font-family: 'Castoro Titling', cursive;
+  color: black;
+  color:  #000000;
+  font-weight: 700;
+}
+.container span p {
+  font-size: 14px;
+  color: rgb(40, 40, 40);
+  /* margin-left: -30px; */
+  word-spacing: 5px;
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+.container div img{
+  width: 40px;
+  mix-blend-mode: darken;
+  cursor: pointer;
+}
+/* .container div button {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25),
+    inset 0px -4px 4px rgba(255, 255, 255, 0.26),
+    inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  font-size: 0.7em;
+  font-weight: 520;
+  padding: 4px 7px;
+}
+.container div button:first-child {
+  background: #cfffd4;
+  color: #1ed030;
+}
+.container div button:last-child {
+  background: #ffcfcf;
+  color: #f01147;
+} */

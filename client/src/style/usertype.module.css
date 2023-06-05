@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 780px;
+  margin: 60px auto;
+  /* background-color: rgb(170, 170, 255); */
+  /* box-shadow: 0px -4px 4px rgba(255, 255, 255, 0.77),
+      0px 5px 5px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 40px 25px; */
+  border-radius: 12px;
+}
+/* .container button {
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25),
+    inset 0px -4px 4px rgba(255, 255, 255, 0.26),
+    inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  border: none;
+  height: 35px;
+  width: 130px;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #1656f0;
+  color: white;
+} */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  /* height: 600px; */
+  box-sizing: border-box;
+  margin-bottom: 80px;
+}
+.container .card div {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.166);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  border-radius: 12px;
+  color: #19A7CE;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.container span h1 {
+  margin-bottom: 30px;
+  color:  #000000;
+  font-family: 'Castoro Titling', cursive;
+}
+.container div div img {
+  width: 120px;
+  mix-blend-mode: darken;
+}
+.container .card div:hover{
+  /* background-color: #ececec; */
+  box-shadow: 0px 0px 8px 3px rgba(9, 131, 188, 0.363);
+  /* box-shadow: none; */
+  border: 2px solid rgb(10, 156, 181);
+}

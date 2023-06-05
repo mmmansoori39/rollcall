@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    /* width: 1080px; */
+    margin: 22px 200px;
+    background-color: #f5f2f4;
+    box-shadow: 0px -4px 4px rgba(255, 255, 255, 0.77),
+      0px 5px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+    padding: 20px 0px 25px 0px;
+    border-radius: 12px;
+  }
+  .container table thead tr th{
+    padding: 12px 20px;
+    background-color: rgb(219, 15, 137);
+    color: #000000;
+  }
+  .container table tbody tr td{
+    padding: 5px 12px;
+    background-color:rgb(244, 128, 197);
+    color: rgb(18, 18, 18);
+  }
+  .container table tbody tr td span{
+    display: flex;
+    justify-content: space-around;
+  }
+  .container table tbody tr td span button{
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25),
+    inset 0px -4px 4px rgba(255, 255, 255, 0.26),
+    inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container table tbody tr td span button:last-child{
+    color: #1ED030;
+    background-color: #CFFFD4;
+  }
+  .container table tbody tr td span button:first-child{
+    color: #F01147;
+    background-color: #FFCFCF;
+  }

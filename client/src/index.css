@@ -1,0 +1,51 @@
+@import "rsuite/dist/rsuite.css";
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Nanum+Gothic&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F6F1F1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.fixing{
+  margin-left: 280px;
+  /* background-color: red; */
+  width: 77vw;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.fixing .acc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* column-gap: 20px; */
+}
+.active{
+  background-color: red;
+}
+button{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+  background-color:#F6F1F1;
+}
+::-webkit-scrollbar-thumb{
+  background-color:  #19A7CE;
+  border-radius: 1rem;
+  /* border: 2px solid rgb(48, 48, 48); */
+  background-clip: content-box;
+}
