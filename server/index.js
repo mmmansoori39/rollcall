@@ -1,16 +1,19 @@
+const cors = require('cors');
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 require("./database/conn");
 
+app.use(cors());
 app.use(express.json());
 // app.use(require("./routes/auth"));
 app.use(require("./routes/adminrouter"));
 app.use(require("./routes/studentrouter"))
 app.use(require("./routes/teacherrouter"))
 
+
 dotenv.config({ path: "./config.env" });
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   res.cookie("moinuddin", "jasmine");

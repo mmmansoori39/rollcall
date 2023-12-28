@@ -7,6 +7,7 @@ import OtpInput from "react-otp-input";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Message, useToaster, Button, ButtonToolbar } from "rsuite";
 import CircularProgress from "@mui/material/CircularProgress";
+import axios from 'axios';
 
 function Accountstudent() {
   const [verify, setVerify] = useState(false);
@@ -96,17 +97,11 @@ function Accountstudent() {
   const sendEmail = async () => {
     try {
       setLoad(true);
-      const res = await fetch("/verifyemail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          emailId,
-        }),
+      const res = await axios.post('http://localhost:8000/verifyemail', {
+        emailId
       });
-      const resdata = await res.json();
-      console.log(resdata);
+
+     console.log(res.data)
       if (res.status === 401) {
         aerrorClick();
         setLoad(false);

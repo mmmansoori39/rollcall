@@ -58,6 +58,7 @@ module.exports = {
   verifyStudentByEmail: async (req, res, next) => {
     try {
       const { emailId } = req.body;
+      console.log(emailId)
       if (!emailId) {
         return res.status(401).json({ error: "please fill up the fields" });
       }
@@ -68,7 +69,7 @@ module.exports = {
         return res.status(402).json({ error: "Your email doesn't exist" });
       }
     } catch (error) {
-      res.status(400).json(error);
+      res.status(400).json(error+"hello");
       console.log(error);
     }
   },
