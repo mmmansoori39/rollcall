@@ -119,6 +119,8 @@ module.exports = {
       }
       const maill = await mailing(emailId, OTP);
 
+      console.log(maill)
+
       res.status(200).json({ message: "check your registered email for OTP" });
       const resetOtp = async () => {
         await Student.findOneAndUpdate({ emailId }, { otp: "" });
